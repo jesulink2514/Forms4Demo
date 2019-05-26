@@ -51,3 +51,16 @@ namespace Forms4Demo.ViewModel
 }
 
 ---
+
+--- Style
+			<Style TargetType="Label">
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Roboto</On>
+                            <On Platform="Android">Fonts/Roboto-Regular.ttf#Roboto</On>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+--- End
