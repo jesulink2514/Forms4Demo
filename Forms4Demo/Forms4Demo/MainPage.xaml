@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:views="clr-namespace:Forms4Demo.Views"
+            mc:Ignorable="d"
+            x:Class="Forms4Demo.MainPage"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            SelectedTabColor="#00dc99">
+    <views:NotImplementedPage Icon="home.png"/>
+    <views:NotImplementedPage Icon="search.png"/>
+    <views:MessagesPage Icon="chat.png"/>
+    <views:NotImplementedPage Icon="settings.png"/>
+</TabbedPage>
