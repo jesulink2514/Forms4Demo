@@ -19,16 +19,9 @@ namespace Forms4Demo.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
-            Forms.SetFlags("CollectionView_Experimental");
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            Forms.SetFlags("CollectionView_Experimental");            
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
-        }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
+        }        
     }
 }

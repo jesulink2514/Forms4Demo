@@ -12,6 +12,16 @@
 
   <ItemGroup>
     <PackageReference Include="LiveXAML" Version="2.1.72" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\EmptyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\InboxPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -3,7 +3,16 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"            
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:views="clr-namespace:Forms4Demo.Views"
             mc:Ignorable="d"
-            x:Class="Forms4Demo.MainPage">
+            x:Class="Forms4Demo.MainPage"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            SelectedTabColor="#00dc99">
+  
+  <views:EmptyPage Icon="home.png" />
+  <views:EmptyPage Icon="search.png"/>
+  <views:InboxPage Icon="chat.png"/>
+  <views:EmptyPage Icon="settings.png"/>
+
 </TabbedPage>
